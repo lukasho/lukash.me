@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chumbets - Multi-tenant betting platform built with Ruby on Rails">
+    <title>Chumbets | Lukash Onyshkevych</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">lukash.me</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="project-hero">
+            <div class="container">
+                <h1 class="project-hero-title">chumbets.com</h1>
+                <p class="project-hero-subtitle">Multi-tenant betting platform built with Ruby on Rails</p>
+                <p class="project-hero-description">
+                    A full-stack Progressive Web App (PWA) featuring real-time betting, casino-style games, 
+                    and a coin economy system. Built with modern Rails practices and deployed on AWS infrastructure.
+                </p>
+                <div class="project-hero-meta">
+                    <span class="project-meta-item"><strong>Status:</strong> In Production</span>
+                    <span class="project-meta-item"><strong>Launched:</strong> October 2025</span>
+                    <span class="project-meta-item"><strong>Scale:</strong> 250k+ requests/month</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <!-- Overview -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Overview</h2>
+                    <p class="project-section-text">
+                        Chumbets is a multi-tenant betting platform that enables users to create betting events, 
+                        place bets, earn coins, and compete on leaderboards. The platform combines real-time betting 
+                        mechanics with casino-style games and social features, all built on a scalable, secure 
+                        multi-tenant architecture.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Key Features</h2>
+                    
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">Betting System</h3>
+                        <ul class="feature-list">
+                            <li><strong>Multiple bet types:</strong> Over/Under, Moneyline (multiple options), and Bracket bets</li>
+                            <li><strong>Dynamic odds:</strong> Automated Market Maker (AMM) similar to Polymarket</li>
+                            <li><strong>Real-time updates:</strong> Odds update dynamically based on betting activity</li>
+                            <li><strong>Event management:</strong> Create events with deadlines and settlement</li>
+                            <li><strong>Coin economy:</strong> Ledger tracking for all coin transactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">Gaming & Social</h3>
+                        <ul class="feature-list">
+                            <li><strong>Casino-style games:</strong> Battleship (multiplayer), Crash, Blackjack, Gambling</li>
+                            <li><strong>Coin shop:</strong> Purchasable items and rewards</li>
+                            <li><strong>Achievement system:</strong> Custom labels and badges</li>
+                            <li><strong>Real-time notifications:</strong> Instant updates on bets, events, and social interactions</li>
+                            <li><strong>Messaging system:</strong> Communication on betting events</li>
+                            <li><strong>Leaderboards:</strong> User rankings and profiles</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">Technical Architecture</h3>
+                        <ul class="feature-list">
+                            <li><strong>Multi-tenant SaaS:</strong> Isolated data per tenant with secure data separation</li>
+                            <li><strong>Progressive Web App:</strong> Service worker for offline support and native app-like experience</li>
+                            <li><strong>Admin dashboards:</strong> Tenant-level and global admin interfaces</li>
+                            <li><strong>User verification:</strong> Comprehensive permission system</li>
+                            <li><strong>Email notifications:</strong> AWS SES integration for transactional emails</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Stack -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Technical Stack</h2>
+                    <div class="tech-stack-grid">
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Backend</h4>
+                            <p class="tech-stack-list">Ruby on Rails 8.1.1</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Database</h4>
+                            <p class="tech-stack-list">PostgreSQL</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Web Server</h4>
+                            <p class="tech-stack-list">Puma with Nginx reverse proxy</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Frontend</h4>
+                            <p class="tech-stack-list">Hotwire (Turbo/Stimulus), Bootstrap 5.3.3</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Authorization</h4>
+                            <p class="tech-stack-list">Pundit</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Deployment</h4>
+                            <p class="tech-stack-list">Capistrano</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Hosting</h4>
+                            <p class="tech-stack-list">AWS EC2</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Email</h4>
+                            <p class="tech-stack-list">AWS SES</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Asset Pipeline</h4>
+                            <p class="tech-stack-list">Propshaft</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Caching</h4>
+                            <p class="tech-stack-list">Solid Cache</p>
+                        </div>
+                        <div class="tech-stack-item">
+                            <h4 class="tech-stack-category">Job Queue</h4>
+                            <p class="tech-stack-list">Solid Queue</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scale & Infrastructure -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Scale & Infrastructure</h2>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">250k+</div>
+                            <div class="metric-label">Requests/month</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">50+</div>
+                            <div class="metric-label">Active users</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">2</div>
+                            <div class="metric-label">Active tenants</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">~350</div>
+                            <div class="metric-label">Bets placed</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">~50</div>
+                            <div class="metric-label">Betting events</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">~10k</div>
+                            <div class="metric-label">Coin transactions</div>
+                        </div>
+                    </div>
+                    <p class="project-section-text" style="margin-top: var(--spacing-md);">
+                        Hosted on AWS EC2 with a multi-tenant architecture supporting multiple brands and communities. 
+                        Database-backed caching (Solid Cache) and job queue (Solid Queue) ensure efficient resource utilization 
+                        and reliable background processing.
+                    </p>
+                </div>
+
+                <!-- Technical Highlights -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Technical Highlights</h2>
+                    
+                    <div class="highlight-item">
+                        <h3 class="highlight-title">Progressive Web App (PWA)</h3>
+                        <ul class="feature-list">
+                            <li>Implemented as a PWA with service worker for offline support</li>
+                            <li>Meets PWA requirements (manifest, service worker registration, install prompts)</li>
+                            <li>Optimized for mobile and desktop with responsive design</li>
+                            <li>Mobile-first approach with touch-friendly interactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-item">
+                        <h3 class="highlight-title">Security & Authorization</h3>
+                        <ul class="feature-list">
+                            <li>Record-level and action-level authorization with Pundit</li>
+                            <li>Policies enforce permissions on specific records and actions</li>
+                            <li>Secure authentication with bcrypt password hashing</li>
+                            <li>User approval/verification workflow</li>
+                            <li>Email-based password reset via AWS SES</li>
+                            <li>Multi-level admin roles (tenant admin, global admin)</li>
+                            <li>Tenant-scoped data isolation ensuring complete data separation</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-item">
+                        <h3 class="highlight-title">Code Quality & Testing</h3>
+                        <ul class="feature-list">
+                            <li>Rails 8.1.1 with current dependencies</li>
+                            <li>Idiomatic Rails patterns and conventions</li>
+                            <li>RuboCop Rails Omakase style guide</li>
+                            <li>Comprehensive test suite (models, controllers, policies, system tests)</li>
+                            <li>Security scanning with Brakeman</li>
+                            <li>Database migrations with proper indexing and constraints</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-item">
+                        <h3 class="highlight-title">Production Readiness</h3>
+                        <ul class="feature-list">
+                            <li>Deployed via Capistrano with automated deployments</li>
+                            <li>Systemd integration for Puma process management</li>
+                            <li>Nginx reverse proxy with gzip compression and caching</li>
+                            <li>Health check endpoints for monitoring</li>
+                            <li>Structured logging and error handling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Timeline</h2>
+                    <ul class="timeline-list">
+                        <li><strong>October 2025:</strong> Launched in production with significant user growth</li>
+                        <li><strong>Ongoing:</strong> Continuous feature development and optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Back to Resume -->
+                <div class="project-section" style="text-align: center; padding-top: var(--spacing-lg);">
+                    <a href="resume.html" class="btn btn-primary">Back to Resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lukash Onyshkevych. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
