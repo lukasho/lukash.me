@@ -16,3 +16,7 @@ Thumbs.db
 *.tmp
 *.temp
 
+# Review/planning docs (don't deploy)
+CONTENT_REVIEW.md
+SUGGESTIONS.md
+

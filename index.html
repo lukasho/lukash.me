@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lukash Onyshkevych - Technical Lead specializing in backend engineering, scalable distributed systems, and API design">
+    <meta name="description" content="Lukash Onyshkevych - Technical Lead building scalable backend systems and leading engineering teams">
     <title>Lukash Onyshkevych | Technical Lead</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lukash Onyshkevych | Technical Lead">
+    <meta property="og:description" content="Technical Lead building scalable backend systems and leading engineering teams. Specialized in distributed systems, API design, and data platforms.">
+    <meta property="og:image" content="https://lukash.me/images/icon.png">
+    <meta property="og:url" content="https://lukash.me/">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +26,14 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">lukash.me</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="resume.html" class="nav-link">Resume</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span>🌙</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -30,9 +47,8 @@
                 </h1>
                 <p class="hero-subtitle">Technical Lead</p>
                 <p class="hero-description">
-                    Technical Lead with a strong foundation in mathematics and deep expertise in backend engineering, 
-                    scalable distributed systems, and API design. Proven ability to lead teams, mentor engineers, 
-                    and collaborate across functions to deliver high-impact, business-driven technical solutions.
+                    I build scalable backend systems and lead engineering teams to deliver high-impact solutions. 
+                    Specialized in distributed systems, API design, and data platforms that process millions of events daily.
                 </p>
                 <div class="hero-links">
                     <a href="https://www.linkedin.com/in/lukash-onyshkevych/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
@@ -57,14 +73,14 @@
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
                     <p>
-                        I'm a Technical Lead with a strong foundation in mathematics and deep expertise in backend engineering, 
-                        scalable distributed systems, and API design. I specialize in building data-centric and AI/ML-driven 
-                        platforms that process millions of events daily.
+                        With a strong foundation in mathematics and deep expertise in backend engineering, I specialize in building 
+                        scalable distributed systems and API integrations. I've architected data platforms that process millions of 
+                        events daily, scaling systems from thousands to millions of requests.
                     </p>
                     <p>
-                        I specialize in scaling distributed systems, optimizing performance, and designing robust integrations 
+                        My work focuses on scaling distributed systems, optimizing performance, and designing robust integrations 
                         with enterprise APIs. I'm passionate about mentoring engineers, improving system architecture, and 
-                        delivering high-impact technical solutions that drive business value.
+                        delivering technical solutions that drive measurable business value.
                     </p>
                 </div>
             </div>
@@ -72,38 +88,41 @@
 
         <section class="experience-highlights">
             <div class="container">
-                <h2 class="section-title">Experience Highlights</h2>
+                <h2 class="section-title">Experience</h2>
                 <div class="experience-grid">
                     <div class="experience-card">
                         <h3 class="experience-card-title">Tech Lead</h3>
-                        <p class="experience-card-company">BlueConic (formerly Jebbit)</p>
+                        <p class="experience-card-company">BlueConic (acquired Jebbit)</p>
                         <p class="experience-card-date">July 2024 - Present</p>
                         <ul class="experience-card-list">
-                            <li>Led team integrating real-time end user data with third party and client-hosted CRMs</li>
+                            <li>Leading team that integrates real-time end user data with third-party and client-hosted CRMs</li>
                             <li>Scaled application from 10k to 1M+ events/day</li>
-                            <li>Achieved 95%+ YoY client retention</li>
+                            <li>Contributing to GDPR and SOC2 compliance initiatives</li>
                         </ul>
                     </div>
                     <div class="experience-card">
                         <h3 class="experience-card-title">Senior Software Engineer</h3>
-                        <p class="experience-card-company">BlueConic (formerly Jebbit)</p>
+                        <p class="experience-card-company">Jebbit</p>
                         <p class="experience-card-date">July 2023 - July 2024</p>
                         <ul class="experience-card-list">
-                            <li>Migrated app to ECS-based distributed services</li>
-                            <li>Improved uptime and scaling capabilities</li>
-                            <li>Mentored junior engineers in software architecture</li>
+                            <li>Architected and executed migration to ECS-based distributed services, improving uptime and enabling horizontal scaling</li>
+                            <li>Mentored junior engineers in software architecture and best practices</li>
                         </ul>
                     </div>
                     <div class="experience-card">
                         <h3 class="experience-card-title">Software Engineer</h3>
-                        <p class="experience-card-company">BlueConic (formerly Jebbit)</p>
-                        <p class="experience-card-date">January 2022 - July 2023</p>
+                        <p class="experience-card-company">Jebbit</p>
+                        <p class="experience-card-date">January 2021 - July 2023</p>
                         <ul class="experience-card-list">
-                            <li>Reduced latency of data delivery by 99%</li>
-                            <li>Expanded third party integrations by 25+ vendors</li>
+                            <li>Reduced data delivery latency from ~5 minutes to ~3 seconds</li>
+                            <li>Expanded third-party integrations suite by 25+ vendors</li>
+                            <li>Established performance monitoring infrastructure, improving code maintainability</li>
                         </ul>
                     </div>
                 </div>
+                <p style="text-align: center; margin-top: var(--spacing-md); color: var(--color-text-light);">
+                    <a href="resume.html" style="color: var(--color-primary); text-decoration: none;">View full resume →</a>
+                </p>
             </div>
         </section>
 
@@ -124,8 +143,8 @@
                         <p class="skill-list">PostgreSQL, REST, 100+ CRM APIs (Salesforce, HubSpot, Klaviyo, Marketo, etc.)</p>
                     </div>
                     <div class="skill-category">
-                        <h4 class="skill-category-title">AI/ML & Other</h4>
-                        <p class="skill-list">ML concepts, models, statistics, RSpec, HTTP/REST</p>
+                        <h4 class="skill-category-title">Testing & Quality</h4>
+                        <p class="skill-list">RSpec, Test-Driven Development, Code Review, Brakeman</p>
                     </div>
                 </div>
             </div>
@@ -137,21 +156,34 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--spacing-xs);">
-                            <h3 class="project-card-title">chumbets.com</h3>
+                            <div style="display: flex; align-items: center; gap: var(--spacing-xs);">
+                                <img src="images/icon.png" alt="Chumbets Icon" style="width: 32px; height: 32px; border-radius: 4px;">
+                                <h3 class="project-card-title">chumbets.com</h3>
+                            </div>
                             <a href="chumbets.html" class="resume-item-link" style="font-size: 0.9rem;">View Details →</a>
                         </div>
-                        <p class="project-card-date">2025 - Present</p>
+                        <p class="project-card-date">September 2025 - Present</p>
                         <p class="project-card-description">
-                            Full-stack web app for event-based betting, handling 250k+ requests/month from 50+ active users. 
-                            Implemented application-level multi-tenancy ensuring secure data isolation across users.
+                            Multi-tenant social platform for private friend groups to run prediction markets. Handles 250k+ requests/month 
+                            with tenant-scoped data isolation. Virtual currency only. One paying customer.
+                            <a href="https://chumbets.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; margin-left: 0.5rem;">Live site →</a>
                         </p>
                     </div>
                     <div class="project-card">
                         <h3 class="project-card-title">Chess AI</h3>
+                        <p class="project-card-date">March 2020</p>
+                        <p class="project-card-description">
+                            Chess engine built in JavaScript implementing minimax algorithm with Alpha-beta pruning optimization. 
+                            Demonstrates algorithmic problem-solving and efficient game tree evaluation.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-card-title">BitTorrent Client</h3>
                         <p class="project-card-date">2019</p>
                         <p class="project-card-description">
-                            Developed a chess engine capable of defeating novice players using minimax algorithm 
-                            with Alpha-beta pruning optimization.
+                            Full-featured BitTorrent client implemented in C, compatible with real BitTorrent clients. Implemented 
+                            BitTorrent protocol including peer discovery, piece management, and file downloading. Built as part of 
+                            a 4-person team, demonstrating collaborative systems programming and protocol implementation expertise.
                         </p>
                     </div>
                 </div>

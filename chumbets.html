@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chumbets - Multi-tenant betting platform built with Ruby on Rails">
+    <meta name="description" content="Chumbets - Multi-tenant social prediction platform built with Ruby on Rails">
     <title>Chumbets | Lukash Onyshkevych</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chumbets | Lukash Onyshkevych">
+    <meta property="og:description" content="Multi-tenant social prediction platform for friend groups. Built with Ruby on Rails, PostgreSQL, and AWS.">
+    <meta property="og:image" content="https://lukash.me/images/icon.png">
+    <meta property="og:url" content="https://lukash.me/chumbets.html">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +26,14 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">lukash.me</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="resume.html" class="nav-link">Resume</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span>🌙</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -24,16 +41,22 @@
     <main class="main">
         <section class="project-hero">
             <div class="container">
-                <h1 class="project-hero-title">chumbets.com</h1>
-                <p class="project-hero-subtitle">Multi-tenant betting platform built with Ruby on Rails</p>
+                <div style="position: relative; text-align: center;">
+                    <img src="images/icon.png" alt="Chumbets Icon" style="width: 80px; height: 80px; border-radius: var(--border-radius); margin-bottom: var(--spacing-md);">
+                    <h1 class="project-hero-title">chumbets.com</h1>
+                    <p class="project-hero-subtitle">Multi-tenant social prediction platform for friend groups</p>
+                </div>
                 <p class="project-hero-description">
-                    A full-stack Progressive Web App (PWA) featuring real-time betting, casino-style games, 
-                    and a coin economy system. Built with modern Rails practices and deployed on AWS infrastructure.
+                    A full-stack Progressive Web App (PWA) where private groups create prediction markets, compete on leaderboards, 
+                    and play mini-games. Uses virtual currency only (no real money). Built with modern Rails practices on AWS.
                 </p>
                 <div class="project-hero-meta">
                     <span class="project-meta-item"><strong>Status:</strong> In Production</span>
-                    <span class="project-meta-item"><strong>Launched:</strong> October 2025</span>
+                    <span class="project-meta-item"><strong>Launched:</strong> September 2025</span>
                     <span class="project-meta-item"><strong>Scale:</strong> 250k+ requests/month</span>
+                </div>
+                <div style="text-align: center; margin-top: var(--spacing-md);">
+                    <a href="https://chumbets.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Live Site</a>
                 </div>
             </div>
         </section>
@@ -44,50 +67,34 @@
                 <div class="project-section">
                     <h2 class="project-section-title">Overview</h2>
                     <p class="project-section-text">
-                        Chumbets is a multi-tenant betting platform that enables users to create betting events, 
-                        place bets, earn coins, and compete on leaderboards. The platform combines real-time betting 
-                        mechanics with casino-style games and social features, all built on a scalable, secure 
-                        multi-tenant architecture.
+                        Chumbets is a multi-tenant social platform where private friend groups create prediction markets, 
+                        place bets with virtual currency, and compete on leaderboards. The platform combines prediction market 
+                        mechanics with social mini-games, all built on a scalable, secure multi-tenant architecture. 
+                        One tenant is a paying customer.
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Scale & Infrastructure -->
                 <div class="project-section">
-                    <h2 class="project-section-title">Key Features</h2>
-                    
-                    <div class="feature-category">
-                        <h3 class="feature-category-title">Betting System</h3>
-                        <ul class="feature-list">
-                            <li><strong>Multiple bet types:</strong> Over/Under, Moneyline (multiple options), and Bracket bets</li>
-                            <li><strong>Dynamic odds:</strong> Automated Market Maker (AMM) similar to Polymarket</li>
-                            <li><strong>Real-time updates:</strong> Odds update dynamically based on betting activity</li>
-                            <li><strong>Event management:</strong> Create events with deadlines and settlement</li>
-                            <li><strong>Coin economy:</strong> Ledger tracking for all coin transactions</li>
-                        </ul>
+                    <h2 class="project-section-title">Scale & Infrastructure</h2>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">250k+</div>
+                            <div class="metric-label">Monthly Requests</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">50+</div>
+                            <div class="metric-label">Active Users</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">~10k</div>
+                            <div class="metric-label">Transactions</div>
+                        </div>
                     </div>
-
-                    <div class="feature-category">
-                        <h3 class="feature-category-title">Gaming & Social</h3>
-                        <ul class="feature-list">
-                            <li><strong>Casino-style games:</strong> Battleship (multiplayer), Crash, Blackjack, Gambling</li>
-                            <li><strong>Coin shop:</strong> Purchasable items and rewards</li>
-                            <li><strong>Achievement system:</strong> Custom labels and badges</li>
-                            <li><strong>Real-time notifications:</strong> Instant updates on bets, events, and social interactions</li>
-                            <li><strong>Messaging system:</strong> Communication on betting events</li>
-                            <li><strong>Leaderboards:</strong> User rankings and profiles</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-category">
-                        <h3 class="feature-category-title">Technical Architecture</h3>
-                        <ul class="feature-list">
-                            <li><strong>Multi-tenant SaaS:</strong> Isolated data per tenant with secure data separation</li>
-                            <li><strong>Progressive Web App:</strong> Service worker for offline support and native app-like experience</li>
-                            <li><strong>Admin dashboards:</strong> Tenant-level and global admin interfaces</li>
-                            <li><strong>User verification:</strong> Comprehensive permission system</li>
-                            <li><strong>Email notifications:</strong> AWS SES integration for transactional emails</li>
-                        </ul>
-                    </div>
+                    <p class="project-section-text" style="margin-top: var(--spacing-md);">
+                        Hosted on AWS EC2 with a multi-tenant architecture supporting multiple brands and communities. 
+                        Efficient resource utilization and reliable background processing ensure consistent performance at scale.
+                    </p>
                 </div>
 
                 <!-- Technical Stack -->
@@ -130,51 +137,66 @@
                             <h4 class="tech-stack-category">Asset Pipeline</h4>
                             <p class="tech-stack-list">Propshaft</p>
                         </div>
-                        <div class="tech-stack-item">
-                            <h4 class="tech-stack-category">Caching</h4>
-                            <p class="tech-stack-list">Solid Cache</p>
-                        </div>
-                        <div class="tech-stack-item">
-                            <h4 class="tech-stack-category">Job Queue</h4>
-                            <p class="tech-stack-list">Solid Queue</p>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Scale & Infrastructure -->
+                <!-- Key Features -->
                 <div class="project-section">
-                    <h2 class="project-section-title">Scale & Infrastructure</h2>
-                    <div class="metrics-grid">
-                        <div class="metric-item">
-                            <div class="metric-value">250k+</div>
-                            <div class="metric-label">Requests/month</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">50+</div>
-                            <div class="metric-label">Active users</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">2</div>
-                            <div class="metric-label">Active tenants</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">~350</div>
-                            <div class="metric-label">Bets placed</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">~50</div>
-                            <div class="metric-label">Betting events</div>
-                        </div>
-                        <div class="metric-item">
-                            <div class="metric-value">~10k</div>
-                            <div class="metric-label">Coin transactions</div>
+                    <h2 class="project-section-title">Key Features</h2>
+                    
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">
+                            Prediction Markets
+                            <button class="collapse-toggle-small" aria-label="Toggle Prediction Markets">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview"><strong>Dynamic odds:</strong> Automated Market Maker (AMM) similar to Polymarket with real-time updates based on market activity</li>
+                                <li class="feature-hidden"><strong>Multiple bet types:</strong> Over/Under, Moneyline (multiple options), and Bracket predictions</li>
+                                <li class="feature-hidden"><strong>Event management:</strong> Create events with deadlines and settlement</li>
+                                <li class="feature-hidden"><strong>Virtual currency:</strong> Ledger tracking for all transactions (no real money)</li>
+                            </ul>
                         </div>
                     </div>
-                    <p class="project-section-text" style="margin-top: var(--spacing-md);">
-                        Hosted on AWS EC2 with a multi-tenant architecture supporting multiple brands and communities. 
-                        Database-backed caching (Solid Cache) and job queue (Solid Queue) ensure efficient resource utilization 
-                        and reliable background processing.
-                    </p>
+
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">
+                            Social & Mini-Games
+                            <button class="collapse-toggle-small" aria-label="Toggle Social & Mini-Games">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview"><strong>Mini-games:</strong> Multiplayer Battleship, Blackjack, and other games with virtual currency integration</li>
+                                <li class="feature-hidden"><strong>Coin shop:</strong> Purchasable items and rewards</li>
+                                <li class="feature-hidden"><strong>Achievement system:</strong> Custom labels and badges</li>
+                                <li class="feature-hidden"><strong>Real-time notifications:</strong> Instant updates on predictions, events, and social interactions</li>
+                                <li class="feature-hidden"><strong>Messaging system:</strong> Communication on prediction events</li>
+                                <li class="feature-hidden"><strong>Leaderboards:</strong> User rankings and profiles</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="feature-category">
+                        <h3 class="feature-category-title">
+                            Technical Architecture
+                            <button class="collapse-toggle-small" aria-label="Toggle Technical Architecture">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview"><strong>Multi-tenant SaaS:</strong> Isolated data per tenant with secure data separation and Progressive Web App (PWA) support</li>
+                                <li class="feature-hidden"><strong>Progressive Web App:</strong> Service worker for offline support and native app-like experience</li>
+                                <li class="feature-hidden"><strong>Admin dashboards:</strong> Tenant-level and global admin interfaces</li>
+                                <li class="feature-hidden"><strong>User verification:</strong> Comprehensive permission system</li>
+                                <li class="feature-hidden"><strong>Email notifications:</strong> AWS SES integration for transactional emails</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Technical Highlights -->
@@ -182,49 +204,79 @@
                     <h2 class="project-section-title">Technical Highlights</h2>
                     
                     <div class="highlight-item">
-                        <h3 class="highlight-title">Progressive Web App (PWA)</h3>
-                        <ul class="feature-list">
-                            <li>Implemented as a PWA with service worker for offline support</li>
-                            <li>Meets PWA requirements (manifest, service worker registration, install prompts)</li>
-                            <li>Optimized for mobile and desktop with responsive design</li>
-                            <li>Mobile-first approach with touch-friendly interactions</li>
-                        </ul>
+                        <h3 class="highlight-title">
+                            Security & Authorization
+                            <button class="collapse-toggle-small" aria-label="Toggle Security & Authorization">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview">Record-level and action-level authorization with Pundit, ensuring tenant-scoped data isolation and multi-level admin roles</li>
+                                <li class="feature-hidden">Policies enforce permissions on specific records and actions</li>
+                                <li class="feature-hidden">Secure authentication with bcrypt password hashing</li>
+                                <li class="feature-hidden">User approval/verification workflow</li>
+                                <li class="feature-hidden">Email-based password reset via AWS SES</li>
+                                <li class="feature-hidden">Multi-level admin roles (tenant admin, global admin)</li>
+                                <li class="feature-hidden">Tenant-scoped data isolation ensuring complete data separation</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="highlight-item">
-                        <h3 class="highlight-title">Security & Authorization</h3>
-                        <ul class="feature-list">
-                            <li>Record-level and action-level authorization with Pundit</li>
-                            <li>Policies enforce permissions on specific records and actions</li>
-                            <li>Secure authentication with bcrypt password hashing</li>
-                            <li>User approval/verification workflow</li>
-                            <li>Email-based password reset via AWS SES</li>
-                            <li>Multi-level admin roles (tenant admin, global admin)</li>
-                            <li>Tenant-scoped data isolation ensuring complete data separation</li>
-                        </ul>
+                        <h3 class="highlight-title">
+                            Progressive Web App (PWA)
+                            <button class="collapse-toggle-small" aria-label="Toggle PWA">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview">Implemented as a PWA with service worker for offline support, meeting PWA requirements with install prompts</li>
+                                <li class="feature-hidden">Meets PWA requirements (manifest, service worker registration, install prompts)</li>
+                                <li class="feature-hidden">Optimized for mobile and desktop with responsive design</li>
+                                <li class="feature-hidden">Mobile-first approach with touch-friendly interactions</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="highlight-item">
-                        <h3 class="highlight-title">Code Quality & Testing</h3>
-                        <ul class="feature-list">
-                            <li>Rails 8.1.1 with current dependencies</li>
-                            <li>Idiomatic Rails patterns and conventions</li>
-                            <li>RuboCop Rails Omakase style guide</li>
-                            <li>Comprehensive test suite (models, controllers, policies, system tests)</li>
-                            <li>Security scanning with Brakeman</li>
-                            <li>Database migrations with proper indexing and constraints</li>
-                        </ul>
+                        <h3 class="highlight-title">
+                            Code Quality & Testing
+                            <button class="collapse-toggle-small" aria-label="Toggle Code Quality">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview">Comprehensive test suite with Rails 8.1.1, RuboCop Rails Omakase style guide, and Brakeman security scanning</li>
+                                <li class="feature-hidden">Rails 8.1.1 with current dependencies</li>
+                                <li class="feature-hidden">Idiomatic Rails patterns and conventions</li>
+                                <li class="feature-hidden">RuboCop Rails Omakase style guide</li>
+                                <li class="feature-hidden">Comprehensive test suite (models, controllers, policies, system tests)</li>
+                                <li class="feature-hidden">Security scanning with Brakeman</li>
+                                <li class="feature-hidden">Database migrations with proper indexing and constraints</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="highlight-item">
-                        <h3 class="highlight-title">Production Readiness</h3>
-                        <ul class="feature-list">
-                            <li>Deployed via Capistrano with automated deployments</li>
-                            <li>Systemd integration for Puma process management</li>
-                            <li>Nginx reverse proxy with gzip compression and caching</li>
-                            <li>Health check endpoints for monitoring</li>
-                            <li>Structured logging and error handling</li>
-                        </ul>
+                        <h3 class="highlight-title">
+                            Production Readiness
+                            <button class="collapse-toggle-small" aria-label="Toggle Production Readiness">
+                                <span class="collapse-icon">▼</span>
+                            </button>
+                        </h3>
+                        <div class="collapsible-content-small">
+                            <ul class="feature-list">
+                                <li class="feature-preview">Deployed via Capistrano with automated deployments, Nginx reverse proxy, health check endpoints, and structured logging</li>
+                                <li class="feature-hidden">Deployed via Capistrano with automated deployments</li>
+                                <li class="feature-hidden">Systemd integration for Puma process management</li>
+                                <li class="feature-hidden">Nginx reverse proxy with gzip compression and caching</li>
+                                <li class="feature-hidden">Health check endpoints for monitoring</li>
+                                <li class="feature-hidden">Structured logging and error handling</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -232,9 +284,49 @@
                 <div class="project-section">
                     <h2 class="project-section-title">Timeline</h2>
                     <ul class="timeline-list">
-                        <li><strong>October 2025:</strong> Launched in production with significant user growth</li>
-                        <li><strong>Ongoing:</strong> Continuous feature development and optimization</li>
+                        <li><strong>September 2025:</strong> Launched in production, achieving 50+ active users within first month</li>
+                        <li><strong>Ongoing:</strong> Continuous feature development, performance optimization, and user growth</li>
                     </ul>
+                </div>
+
+                <!-- Screenshots -->
+                <div class="project-section">
+                    <h2 class="project-section-title">Screenshots <span style="font-size: 0.8rem; font-weight: 400; color: var(--color-text-light);">(click to expand)</span></h2>
+                    
+                    <!-- Mobile Screenshots Grid -->
+                    <div class="screenshots-grid">
+                        <div class="screenshot-item" onclick="openLightbox(0)">
+                            <img src="images/chumbets-event.png" alt="Prediction Event Interface">
+                            <div class="screenshot-caption">Prediction Event Interface</div>
+                        </div>
+                        <div class="screenshot-item" onclick="openLightbox(1)">
+                            <img src="images/chumbets-sidebar.png" alt="Sidebar Navigation">
+                            <div class="screenshot-caption">Sidebar Navigation</div>
+                        </div>
+                        <div class="screenshot-item" onclick="openLightbox(2)">
+                            <img src="images/chumbets-battleship.png" alt="Battleship Game">
+                            <div class="screenshot-caption">Battleship Multiplayer Game</div>
+                        </div>
+                        <div class="screenshot-item" onclick="openLightbox(3)">
+                            <img src="images/chumbets-bonuses.png" alt="Bonuses & Rewards">
+                            <div class="screenshot-caption">Bonuses & Rewards</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop Screenshot - Full Width -->
+                    <div class="screenshot-featured" onclick="openLightbox(4)">
+                        <img src="images/desktop view.png" alt="Desktop View">
+                        <div class="screenshot-caption">Desktop View</div>
+                    </div>
+                </div>
+                
+                <!-- Lightbox Modal -->
+                <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+                    <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+                    <span class="lightbox-prev" onclick="changeSlide(event, -1)">&#10094;</span>
+                    <img id="lightbox-img" class="lightbox-content" src="" alt="">
+                    <span class="lightbox-next" onclick="changeSlide(event, 1)">&#10095;</span>
+                    <div id="lightbox-caption" class="lightbox-caption"></div>
                 </div>
 
                 <!-- Back to Resume -->

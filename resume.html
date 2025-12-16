@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lukash Onyshkevych - Resume">
+    <meta name="description" content="Resume - Lukash Onyshkevych, Technical Lead specializing in backend engineering and scalable distributed systems">
     <title>Resume | Lukash Onyshkevych</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Resume | Lukash Onyshkevych">
+    <meta property="og:description" content="Technical Lead with 4+ years of experience building scalable backend systems. Specialized in distributed systems, API design, and data platforms.">
+    <meta property="og:image" content="https://lukash.me/images/icon.png">
+    <meta property="og:url" content="https://lukash.me/resume.html">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +26,14 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">lukash.me</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="resume.html" class="nav-link active">Resume</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span>🌙</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -28,64 +45,75 @@
                     <h1 class="resume-title">Lukash Onyshkevych</h1>
                     <p class="resume-subtitle">Technical Lead</p>
                     <p class="resume-summary">
-                        Technical Lead with a strong foundation in mathematics and deep expertise in backend engineering, 
-                        scalable distributed systems, and API design. Proven ability to lead teams, mentor engineers, 
-                        and collaborate across functions to deliver high-impact, business-driven technical solutions, 
-                        including data-centric and AI/ML-driven platforms.
+                        Technical Lead with 4+ years of experience building scalable backend systems and leading engineering teams. 
+                        Specialized in distributed systems, API design, and data platforms processing millions of events daily. 
+                        Strong mathematical foundation with expertise in data-centric architectures.
                     </p>
                     <div class="resume-contact">
+                        <a href="mailto:lukash.onyshkevych@gmail.com">Email</a>
+                        <span class="separator">•</span>
                         <a href="https://www.linkedin.com/in/lukash-onyshkevych/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <span class="separator">•</span>
                         <a href="https://github.com/lukasho" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
 
-                <div class="resume-content">
+                <div class="resume-content-wrapper">
+                    <!-- Table of Contents Sidebar -->
+                    <aside class="toc-sidebar">
+                        <nav class="toc-nav">
+                            <a href="#work-experience" class="toc-link">Experience</a>
+                            <a href="#education" class="toc-link">Education</a>
+                            <a href="#skills" class="toc-link">Skills</a>
+                            <a href="#projects" class="toc-link">Projects</a>
+                        </nav>
+                    </aside>
+
+                    <div class="resume-content">
+
                     <!-- Experience Section -->
-                    <section class="resume-block">
+                    <section class="resume-block" id="work-experience">
                         <h2 class="resume-block-title">Work Experience</h2>
                         
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h3 class="resume-item-title">Tech Lead</h3>
-                                <span class="resume-item-company">BlueConic (formerly Jebbit)</span>
+                                <span class="resume-item-company">BlueConic (acquired Jebbit)</span>
                                 <span class="resume-item-date">July 2024 - Present</span>
                             </div>
                             <ul class="resume-item-list">
-                                <li>Led team responsible for integrating real-time end user data with third party and client-hosted CRMs</li>
-                                <li>Scaled application capabilities from processing 10k events/day to over a million/day</li>
-                                <li>Represented team interfacing with stakeholders and clients, securing over 95% YoY client retention</li>
+                                <li>Leading team responsible for integrating real-time end user data with third-party and client-hosted CRMs</li>
+                                <li>Scaled application from processing 10k events/day to over 1M events/day</li>
+                                <li>Contributing to GDPR and SOC2 compliance initiatives, ensuring data handling meets enterprise security standards</li>
                             </ul>
                         </div>
 
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h3 class="resume-item-title">Senior Software Engineer</h3>
-                                <span class="resume-item-company">BlueConic (formerly Jebbit)</span>
+                                <span class="resume-item-company">Jebbit</span>
                                 <span class="resume-item-date">July 2023 - July 2024</span>
                             </div>
                             <ul class="resume-item-list">
-                                <li>Migrated app to ECS-based distributed services, improving uptime and scaling capabilities</li>
+                                <li>Architected and executed migration to ECS-based distributed services, improving uptime and enabling horizontal scaling</li>
                                 <li>Mentored junior engineers in software architecture and best practices</li>
                             </ul>
                         </div>
 
                         <div class="resume-item">
                             <div class="resume-item-header">
-                                <h3 class="resume-item-title">Software Engineer → Junior Software Engineer</h3>
-                                <span class="resume-item-company">BlueConic (formerly Jebbit)</span>
+                                <h3 class="resume-item-title">Junior Software Engineer → Software Engineer</h3>
+                                <span class="resume-item-company">Jebbit</span>
                                 <span class="resume-item-date">January 2021 - July 2023</span>
                             </div>
                             <ul class="resume-item-list">
-                                <li>Reduced latency of data delivery by 99%, improving performance by a factor of 100</li>
-                                <li>Expanded third party integrations suite by more than 25 vendors used by clients</li>
-                                <li>Maintained and expanded suite of third party integrations; addressed issues with Sales Engineers and clients</li>
-                                <li>Improved code maintainability and performance monitoring of codebase</li>
+                                <li>Reduced data delivery latency from ~5 minutes to ~3 seconds through performance optimization</li>
+                                <li>Expanded third-party integrations suite by 25+ vendors</li>
                             </ul>
                             <p class="resume-item-description" style="margin-top: var(--spacing-sm);">
                                 <strong>Technologies:</strong> Ruby on Rails, AWS (EC2, ECS, SQS, S3), Docker, PostgreSQL, 
                                 GitHub CI/CD, HTTP/REST, Terraform, RSpec. Proficient in over 100 enterprise CRM APIs, including 
-                                BlueConic, Salesforce, Klaviyo, Marketo, Hubspot.
+                                Salesforce, Klaviyo, Marketo, Hubspot.
                             </p>
                         </div>
 
@@ -96,13 +124,14 @@
                                 <span class="resume-item-date">August 2018 - January 2021</span>
                             </div>
                             <p class="resume-item-description">
-                                Taught AP Computer Science, Technology, and Math Team courses.
+                                Developed curriculum for AP Computer Science, Technology courses, and Math Team competition prep. 
+                                Taught 100+ students programming fundamentals and algorithmic problem-solving.
                             </p>
                         </div>
                     </section>
 
                     <!-- Education Section -->
-                    <section class="resume-block">
+                    <section class="resume-block" id="education">
                         <h2 class="resume-block-title">Education</h2>
                         
                         <div class="resume-item">
@@ -118,7 +147,7 @@
                     </section>
 
                     <!-- Skills Section -->
-                    <section class="resume-block">
+                    <section class="resume-block" id="skills">
                         <h2 class="resume-block-title">Skills</h2>
                         <div class="skills-grid">
                             <div class="skill-category">
@@ -134,10 +163,6 @@
                                 <p class="skill-list">PostgreSQL, REST, over 100 CRM APIs (Salesforce, HubSpot, Klaviyo, Marketo, etc.)</p>
                             </div>
                             <div class="skill-category">
-                                <h4 class="skill-category-title">AI/ML</h4>
-                                <p class="skill-list">Strong mathematical background, proficiency in ML concepts, models, and statistics</p>
-                            </div>
-                            <div class="skill-category">
                                 <h4 class="skill-category-title">Testing & Quality</h4>
                                 <p class="skill-list">RSpec, Test-Driven Development, Code Review</p>
                             </div>
@@ -145,42 +170,58 @@
                     </section>
 
                     <!-- Projects Section -->
-                    <section class="resume-block">
-                        <h2 class="resume-block-title">Relevant Projects</h2>
+                    <section class="resume-block" id="projects">
+                        <h2 class="resume-block-title">Projects</h2>
                         
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h3 class="resume-item-title">chumbets.com</h3>
                                 <a href="chumbets.html" class="resume-item-link">View Details</a>
-                                <span class="resume-item-date">2025 - Present</span>
+                                <span class="resume-item-date">September 2025 - Present</span>
                             </div>
                             <p class="resume-item-description" style="margin-bottom: var(--spacing-sm);">
-                                Multi-tenant betting platform built with Ruby on Rails. A full-stack Progressive Web App (PWA) 
-                                featuring real-time betting, casino-style games, and a coin economy system.
+                                Multi-tenant social platform for private friend groups to create prediction markets and compete on leaderboards. 
+                                Uses virtual currency only (no real money). One tenant is a paying customer.
+                                <a href="https://chumbets.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); text-decoration: none; margin-left: 0.5rem;">Live at chumbets.com →</a>
                             </p>
                             <ul class="resume-item-list">
-                                <li><strong>Betting System:</strong> Multiple bet types (Over/Under, Moneyline, Bracket bets) with dynamic odds using an Automated Market Maker (AMM) similar to Polymarket, real-time odds updates, and event settlement</li>
-                                <li><strong>Gaming & Social:</strong> Casino-style games (Battleship multiplayer, Crash, Blackjack), coin shop, achievement system, real-time notifications, messaging system, and leaderboards</li>
-                                <li><strong>Technical Architecture:</strong> Multi-tenant SaaS with isolated data per tenant, PWA with service worker for offline support, admin dashboards (tenant-level and global), user verification system</li>
-                                <li><strong>Scale:</strong> 250k+ requests/month, 50+ active users, 2 active tenants, ~350 bets placed, ~10,000 coin transactions processed</li>
-                                <li><strong>Security & Quality:</strong> Record-level and action-level authorization with Pundit, comprehensive test suite, security scanning with Brakeman, RuboCop Rails Omakase style guide</li>
+                                <li><strong>Prediction Markets:</strong> Multiple bet types (Over/Under, Moneyline, Bracket) with dynamic odds via Automated Market Maker (AMM), real-time updates, and event settlement</li>
+                                <li><strong>Social Features:</strong> Multiplayer mini-games (Battleship, Blackjack), achievements, real-time notifications, messaging, and leaderboards</li>
+                                <li><strong>Architecture:</strong> Multi-tenant SaaS with tenant-scoped data isolation, PWA with offline support, admin dashboards per tenant</li>
+                                <li><strong>Scale:</strong> 250k+ requests/month, 50+ active users, ~10,000 transactions processed</li>
+                                <li><strong>Security & Quality:</strong> Pundit authorization, comprehensive test suite, Brakeman security scanning, RuboCop Rails Omakase</li>
                             </ul>
                             <p class="resume-item-description" style="margin-top: var(--spacing-sm);">
                                 <strong>Tech Stack:</strong> Ruby on Rails 8.1.1, PostgreSQL, Puma with Nginx reverse proxy, Hotwire (Turbo/Stimulus), 
-                                Bootstrap 5.3.3, Pundit, AWS EC2, AWS SES, Capistrano, Solid Cache, Solid Queue
+                                Bootstrap 5.3.3, Pundit, AWS EC2, AWS SES, Capistrano
                             </p>
                         </div>
 
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h3 class="resume-item-title">Chess AI</h3>
+                                <span class="resume-item-date">March 2020</span>
+                            </div>
+                            <p class="resume-item-description">
+                                Chess engine built in JavaScript implementing minimax algorithm with Alpha-beta pruning optimization. 
+                                Demonstrates algorithmic problem-solving and efficient game tree evaluation.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3 class="resume-item-title">BitTorrent Client</h3>
                                 <span class="resume-item-date">2019</span>
                             </div>
                             <p class="resume-item-description">
-                                Developed a chess engine capable of defeating novice players; minimax engine with Alpha-beta pruning.
+                                Full-featured BitTorrent client implemented in C, compatible with standard BitTorrent clients. Implemented 
+                                BitTorrent protocol including peer discovery via tracker communication, piece management and verification, 
+                                and multi-peer file downloading. Built as part of a 4-person team, demonstrating collaborative systems 
+                                programming, protocol implementation, and distributed systems concepts.
                             </p>
                         </div>
                     </section>
+                    </div>
                 </div>
             </div>
         </section>

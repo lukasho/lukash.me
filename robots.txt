@@ -1,0 +1,6 @@
+# Welcome crawlers - this is a portfolio site
+User-agent: *
+Allow: /
+
+Sitemap: https://lukash.me/sitemap.xml
+
